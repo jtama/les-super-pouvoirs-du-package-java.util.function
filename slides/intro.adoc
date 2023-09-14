@@ -1,0 +1,96 @@
+[%notitle]
+== Intro
+
+image::WFTPM.png[]
+
+[.notes]
+--
+Vous connaissez cette image ?
+
+Bon bin ça me représente pas mal. Avec des contexts différents.
+
+Il y a bientôt 10 ans :
+
+Je disais ça : "Haaaa c'est vraiment nul ifpresent pourrrrrri"
+
+Et maintenant je dis :
+
+Bon il serait peut-être temps d'apprendre à utiliser les optionals !
+
+Du coup peut-être que dans 10 ans, je dirais encore autre chose !
+--
+
+[%notitle.%auto-animate.columns.is-vcentered.transparency]
+=== Présentation
+
+image::background.png[background, size=fill]
+
+[.column.is-one-third]
+--
+image::jta.png[width=500]
+--
+
+[.column.has-text-left,data-id=presentation]
+--
+
+[.important-text]
+Jérôme
+
+[.important-text]
+Tech Lead / Architecte / Compagnon du devoir
+
+[.important-text.vertical-align-middle]
+image:logo_onepoint.jpeg[width=50]
+onepoint
+image:Jérôme_Damien.png[width=100]
+
+
+[.important-text.vertical-align-middle]
+icon:github[] @jtama image:avatar.png[width=100]
+--
+
+[.notes]
+--
+Mais je n'ai pas fait mon tour de france, du coup je prend aujourd'hui mon baton de pellerin pour me rattraper...
+Merci à onepoint qui me permet de parler dans des confs, plutôt que de devoir m'immoler, je suis un peu douillet...
+--
+
+[%notitle.%auto-animate.columns.is-vcentered.transparency]
+=== Présentation
+
+image::background.png[background, size=fill]
+
+[.column.is-one-third]
+--
+image::dluc.png[width=500]
+--
+
+[.column.has-text-left,data-id=presentation]
+--
+
+[.important-text]
+Damien
+
+[.important-text]
+Tech Lead / Architecte / Buveur de bière
+
+[.important-text.vertical-align-middle]
+image:logo_onepoint.jpeg[width=50]
+onepoint
+image:Jérôme_Damien.png[width=100]
+--
+
+
+
+[%notitle.columns.is-vcentered]
+=== Context
+
+image::jr-logo-big.png[background, size=contain]
+
+[.notes]
+--
+On bosse pour _Java Republic ©_. Si vous ne connaissez pas, on vend du café et du thé. Point barre.
+
+
+Notre application doit préremplir des formulaires en fonction du size de boisson traité. On fait jusqu'à présent du café et du thé, et nos géniaux commerciaux ont décidé à partir de maintenant de vendre de la vaisselle, des tee-shirts, et d'ouvrir de nouveaux pays.
+--

@@ -1,0 +1,19 @@
+= Les super-pouvoirs du package `java.util.function`
+
+== Plan : 
+
+Présentation d'un contexte factice (nos rôles, l'application à refacto ...) – 5 minutes 
+
+Utilisation d'un Predicate – 6 minutes
+
+Améliorer la lisibilité – 6 minutes
+
+Utilisation d'un Consumer – 5 minutes
+
+Utilisation d'un Supplier – 5 minutes
+
+Utilisation d'une Function – 5 minutes
+
+Composition de fonctions – 5 minutes
+
+Conclusion et questions (BiPredicate, Fonction ordre supérieur, lisibilité etc ...) – 3 minutes

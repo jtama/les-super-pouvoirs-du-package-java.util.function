@@ -1,0 +1,12 @@
+= Les super-pouvoirs du package `java.util.function`?
+
+Readable version available on https://jtama.github.io/les-supers-pouvoir-du-package-java.util.function/#/[Github Pages -> ici]
+
+== Generate
+
+[source,bash]
+----
+git clone git@github.com:cfrezier/reveal-progress-image-plugin.git reveal.js/plugin/progress-image
+docker container run --rm -v $(pwd):/documents asciidoctor/docker-asciidoctor:1.58 'gem install asciidoctor-revealjs --pre && asciidoctor-revealjs -r asciidoctor /documents/slides/index.adoc'
+----
+

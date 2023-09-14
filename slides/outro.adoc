@@ -1,0 +1,34 @@
+[.conclusion]
+== !
+
+[.notes]
+--
+
+Attention, rappelez-vous qu'il n'existe pas de super bullet... l'héritage est toujours une bonne chose.
+
+LISIBILITE, MAINTENABILLITE
+
+--
+
+image::outro.jpg[background, size=contain]
+
+
+[.transparency]
+=== !
+
+Merci !
+
+[.important-text.vertical-align-middle]
+image:qr.png[width=200]
+Les feedbacks !
+
+[.important-text.vertical-align-middle]
+image:qr_code_1.png[width=200]
+Le dépôt github !
+
+
+[.notes]
+--
+J'espère vous avoir éviter quelques pièges, ou en tout vous faciliter le chemine
+Si on a le temps des questions ?
+--

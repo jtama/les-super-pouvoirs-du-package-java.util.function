@@ -1,0 +1,66 @@
+
+- package `java.util.function` assez méconnu
+- comment l'utiliser
+- comment l'intégrer dans vos dévs au quotidien
+
+- slides de présentation
+
+- exemples exagérés et raccourcis
+- tirés d'expériences vécues
+- java republic
+- vente de café et thé
+- marketing -> vente de tee shirts
+
+2min55
+
+- présentation de l'évolution "TeeShirt"
+- FormService : permet de préremplir les champs d'un formulaire
+- présentation Beverage, Tea, Coffee
+
+- début live coding
+
+- Duplication entre les méthodes getItemsForMarketOperation et getItemsForChildren
+- factoriser le stream
+- `c'est quoi les :: dans Item::isTarget ?`
+- méthode référence : permet de référencer une méthode déjà implémentée. elle ne fournit pas l'implémentation
+- écriture sous forme de lambda
+- `c'est quoi une lambda`
+- lambda : fonction anonyme pour créer des instances de type Interface Fonctionnelle. Permet de définir une implémentation de la méthode abstraite de l'interface en question
+- filter ça prend quoi ? un Predicate => new Predicate
+- Extraction du Predicate en paramètre
+
+09min10
+
+- isTarget : cible des opérations commerciales : pas nécessaire pour les TeeShirts
+- utilisation de getItemsFiltered pour chaque DAO
+- suppression de isTarget
+
+15min44
+
+- duplication DAO
+- Refacto des DAO, création d'un RestDaoTemplate à partir de TeaDao
+- URL
+- Test retour en erreur : Predicate
+- Mapper : Function
+- Continue à refacto, je reviens : Function<Void, T>, Function<T, Void>
+- Récupération message erreur : Supplier
+- Notification : Consumer
+
+30min30
+
+- few month later
+
+- StatService : composition de Predicate
+- Composition de Consumer => andThen
+
+35min
+
+- Conclusion
+- IntStream => IntPredicate
+- UnaryOperator
+- BiFunction
+- Ne pas utiliser ce package partout => lisibilité ? héritage justifié ?
+- `Variable used in lambda expression should be final or effectively final`
+- Crazylambda
+
+
