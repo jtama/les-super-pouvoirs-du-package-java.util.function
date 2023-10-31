@@ -23,7 +23,7 @@ image:qr.png[width=200]
 Les feedbacks !
 
 [.important-text.vertical-align-middle]
-image:qr_code_1.png[width=200]
+image:qr_code_repo.png[width=200]
 Le dépôt github !
 
 
