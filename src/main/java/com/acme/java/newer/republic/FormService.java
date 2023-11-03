@@ -1,11 +1,11 @@
 package com.acme.java.newer.republic;
 
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FormService {
 
@@ -21,43 +21,39 @@ public class FormService {
 	}
 
 	public List<Item> getItemsForMarketOperation() throws URISyntaxException, InterruptedException {
-		List<Item> items = new ArrayList<>();
-		items.addAll(getFilteredItemList(coffeeDao.getCoffee(), c -> c.containsCaffeine() && !c.isFairTrade()));
-		items.addAll(getFilteredItemList(teaDao.getTea(), t -> t.comesFromFsc() && t.type() == Tea.Type.RED));
-		items.addAll(getFilteredItemList(teeShirtDao.getTeeShirt(), ALWAYS_MARKET_OPERATION));
-		if (items.isEmpty()) {
-			throw new VeryBadBusinessException("⚰️ What ? No special operation ? ☠️");
-		}
-		return items;
+		Stream<Item> coffeeStream = toItemStream(coffeeDao.getCoffee(), coffee -> coffee.containsCaffeine() && !coffee.isFairTrade());
+		Stream<Item> teaStream = toItemStream(teaDao.getTea(), tea -> tea.comesFromFsc() && tea.type() == Tea.Type.RED);
+		Stream<Item> teeShirtStream = toItemStream(teeShirtDao.getTeeShirt(), Item::isSuitableForChildren);
+		return filterAndControl(
+				"⚰️ What ? No special operation ? ☠️", Stream.of(coffeeStream, teaStream, teeShirtStream));
 	}
 
 	public List<Item> getItemsForChildren() throws URISyntaxException, InterruptedException {
-		List<Item> items = new ArrayList<>();
-		items.addAll(coffeeDao.getCoffee());
-		items.addAll(teaDao.getTea());
-		items.addAll(teeShirtDao.getTeeShirt());
+		Stream<Item> coffeeStream = toItemStream(coffeeDao.getCoffee(), Item::isSuitableForChildren);
+		Stream<Item> teaStream = toItemStream(teaDao.getTea(), Item::isSuitableForChildren);
+		Stream<Item> teeShirtStream = toItemStream(teeShirtDao.getTeeShirt(), Item::isSuitableForChildren);
+		return filterAndControl(
+				"⚰️ What ? Nothing suitable for children ? ☠️", Stream.of(coffeeStream, teaStream, teeShirtStream));
+	}
 
-		List<Item> itemsFiltered = getFilteredItemList(items, Item::isSuitableForChildren);
+	private <T extends Item>  Stream<Item> toItemStream(List<T> values, Predicate<T> filter){
+		return values.stream().filter(filter).map(this::withShorterDescription);
+	}
 
-		if (itemsFiltered.isEmpty()) {
-			throw new VeryBadBusinessException("⚰️ What ? Nothing suitable for children ? ☠️");
+	private List<Item> filterAndControl(String exceptionMessage, Stream<Stream<Item>> itemStreams) {
+		List<Item> filteredItems = itemStreams
+				.flatMap(Function.identity())
+				.toList();
+		if (filteredItems.isEmpty()) {
+			throw new VeryBadBusinessException(exceptionMessage);
 		}
-		return itemsFiltered;
+		return filteredItems;
 	}
 
-	private <T extends Item> List<Item> getFilteredItemList(List<T> items, Predicate<T> filter) {
-		return items.stream()
-		            .filter(filter)
-		            .map(item -> {
-			            item.setDescription(withShorterDescription(item));
-			            return item;
-		            })
-		            .collect(Collectors.toList());
-	}
-
-	private String withShorterDescription(Item item) {
+	private <T extends Item> Item withShorterDescription(T item) {
 		// If you really want to know, this is neither shorter nor more readable...
-		return Base64.getEncoder().encodeToString(item.description().getBytes());
+		item.setDescription(Base64.getEncoder().encodeToString(item.description().getBytes()));
+		return item;
 	}
 
 	private static class VeryBadBusinessException extends RuntimeException {
