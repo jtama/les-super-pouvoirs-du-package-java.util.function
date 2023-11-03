@@ -1,6 +1,6 @@
 {
   "name": "@cfrezier/reveal-progress-image-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Reveal.js plugin allowing to add a small image to your progress bar",
   "author": "Christophe Frézier <frezier@gmail.com>",
   "license": "MIT",

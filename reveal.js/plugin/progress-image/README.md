@@ -4,12 +4,18 @@ Add an image in your reveal.js progress bar
 ## Use plugin
 
 ````js
-Reveal.initialize({
-    hash: true,
-    progress: true,
-    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
-    });
+<script type="module">
+    import RevealProgressImage from "../node_modules/@cfrezier/reveal-progress-image-plugin/dist/index.js";
+    
+    Reveal.initialize({
+        hash: true,
+        progress: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
+        });
+</script>
 ````
+
+This is available inside an ESModule, so you probably should use an `<script type="module">` tag.
 
 ## Custom Configuration
 
