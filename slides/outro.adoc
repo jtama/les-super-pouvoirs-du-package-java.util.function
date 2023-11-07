@@ -18,13 +18,13 @@ image::outro.jpg[background, size=contain]
 
 Merci !
 
-[.important-text.vertical-align-middle]
+[.important-text.has-text-left.vertical-align-middle]
 image:qr.png[width=200]
-Les feedbacks !
+Des feedbacks, please !
 
-[.important-text.vertical-align-middle]
-image:qr_code_repo.png[width=200]
+[.important-text.has-text-left.vertical-align-middle]
 Le dépôt github !
+image:qr_code_repo.png[width=200]
 
 
 [.notes]
