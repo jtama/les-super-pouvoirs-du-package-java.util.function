@@ -111,8 +111,9 @@ img {
     margin: 0;
 }
 
-.important-text > p {
+.important-text > *  {
     font-size: xxx-large;
+    font-weight: bold;
     color: #012d3f;
 }
 
@@ -141,3 +142,11 @@ img {
     opacity: 0.3;
 }
 
+.pokemon {
+    position: absolute;
+    top: -95px;
+    right: -55px;
+    transform: rotate(18deg);
+    z-index: -1;
+    width: 435px;
+}
