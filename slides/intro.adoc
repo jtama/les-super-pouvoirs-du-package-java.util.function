@@ -1,5 +1,7 @@
-[%notitle]
+[%notitle.transparency]
 == Intro
+
+image::background.png[background, size=fill]
 
 image::WFTPM.png[]
 
@@ -27,32 +29,35 @@ image::background.png[background, size=fill]
 
 [.column.is-one-third]
 --
-image::jta.png[width=500]
+image::jta.png[]
 --
 
-[.column.has-text-left,data-id=presentation]
---
+[.column.is-3.has-text-left,data-id=presentation]
+****
 
 [.important-text]
+--
 Jérôme
 
-[.important-text]
-Tech Lead / Architecte / Compagnon du devoir
+Tech Lead
 
-[.important-text.vertical-align-middle]
+Architecte
+--
+
+Compagnon du devoir
+
+[.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]
-onepoint
-image:Jérôme_Damien.png[width=100]
+onepoint BDX
 
-
-[.important-text.vertical-align-middle]
+[.vertical-align-middle]
 icon:github[] @jtama image:avatar.png[width=100]
---
 
-[.notes]
+****
+
+[.column.pokemon]
 --
-Mais je n'ai pas fait mon tour de france, du coup je prend aujourd'hui mon baton de pellerin pour me rattraper...
-Merci à onepoint qui me permet de parler dans des confs, plutôt que de devoir m'immoler, je suis un peu douillet...
+image:Jérôme_Damien.png[]
 --
 
 [%notitle.%auto-animate.columns.is-vcentered.transparency]
@@ -62,22 +67,35 @@ image::background.png[background, size=fill]
 
 [.column.is-one-third]
 --
-image::dluc.png[width=500]
+image::dluc.png[]
 --
 
-[.column.has-text-left,data-id=presentation]
---
+[.column.is-3.has-text-left,data-id=presentation]
+****
 
 [.important-text]
+--
 Damien
 
-[.important-text]
-Tech Lead / Architecte / Buveur de bière
+Tech Lead
 
-[.important-text.vertical-align-middle]
+Architecte
+--
+
+Buveur de bière
+
+[.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]
-onepoint
-image:Jérôme_Damien.png[width=100]
+onepoint BDX
+
+
+[.vertical-align-middle]
+icon:github[] @dlucasd
+****
+
+[.column.pokemon]
+--
+image:Jérôme_Damien.png[]
 --
 
 
