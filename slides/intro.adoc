@@ -82,7 +82,7 @@ Tech Lead
 Architecte
 --
 
-Buveur de bière
+Buveur de bières
 
 [.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]

@@ -12,6 +12,18 @@ LISIBILITE, MAINTENABILLITE
 
 image::outro.jpg[background, size=contain]
 
+[.transparency]
+=== !
+
+image::title.webp[background, blur, size=fill]
+
+[.step]
+* Lambda : ce n'est pas juste une flèche
+* Function : prend un truc, renvoie un truc
+* Consumer : prend un truc, renvoie rien
+* Supplier : prend rien, renvoie un truc
+* Predicate : prend un truc, renvoie un booléen
+* et tous les autres super-héros ...
 
 [.transparency]
 === !
