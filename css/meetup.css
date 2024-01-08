@@ -43,7 +43,7 @@
 }
 
 body::after {
-    content: url("../images/logo_devfest.png");
+    content: url("../images/logo_TNT.png");
     position: fixed;
     left: 0;
     bottom: 0;
