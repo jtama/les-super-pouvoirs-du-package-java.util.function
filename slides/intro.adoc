@@ -27,12 +27,12 @@ Du coup peut-être que dans 10 ans, je dirais encore autre chose !
 
 image::background.png[background, size=fill]
 
-[.column.is-one-third]
+[.column]
 --
 image::jta.png[]
 --
 
-[.column.is-3.has-text-left,data-id=presentation]
+[.column.is-three-fifths.has-text-left,data-id=presentation]
 ****
 
 [.important-text]
@@ -55,22 +55,18 @@ icon:github[] @jtama image:avatar.png[width=100]
 
 ****
 
-[.column.pokemon]
---
-image:Jérôme_Damien.png[]
---
 
 [%notitle.%auto-animate.columns.is-vcentered.transparency]
 === Présentation
 
 image::background.png[background, size=fill]
 
-[.column.is-one-third]
+[.column]
 --
 image::dluc.png[]
 --
 
-[.column.is-3.has-text-left,data-id=presentation]
+[.column.is-three-fifths.has-text-left,data-id=presentation]
 ****
 
 [.important-text]
@@ -82,7 +78,7 @@ Tech Lead
 Architecte
 --
 
-Buveur de bières
+Buveur de café
 
 [.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]
@@ -92,12 +88,6 @@ onepoint BDX
 [.vertical-align-middle]
 icon:github[] @dlucasd
 ****
-
-[.column.pokemon]
---
-image:Jérôme_Damien.png[]
---
-
 
 
 [%notitle.columns.is-vcentered]

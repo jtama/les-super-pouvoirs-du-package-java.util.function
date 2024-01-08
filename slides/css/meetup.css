@@ -43,11 +43,14 @@
 }
 
 body::after {
-    content: url("../images/logo_devfest.png");
+    content: "";
     position: fixed;
-    left: 0;
-    bottom: 0;
-    transform: scale(.5);
+    left: 60px;
+    bottom: 60px;
+    width: 200px;
+    height: 143px;
+    background-image: url('../images/logo_TNT.png');
+    background-size: 200px 143px;
 }
 
 .reveal ul {
@@ -144,15 +147,6 @@ img {
 .title > .slide-background-content {
     filter: blur(3px) brightness(200%);
     opacity: 0.3;
-}
-
-.pokemon {
-    position: absolute;
-    top: -95px;
-    right: -55px;
-    transform: rotate(18deg);
-    z-index: -1;
-    width: 435px;
 }
 
 .blur {

@@ -5,8 +5,9 @@
 
 - slides de présentation
 
-- exemples exagérés et raccourcis
+- on a terminé avec les slides
 - tirés d'expériences vécues
+- exemples exagérés et raccourcis
 - java republic
 - vente de café et thé
 - marketing -> vente de tee shirts
