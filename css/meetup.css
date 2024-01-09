@@ -45,8 +45,8 @@
 body::after {
     content: "";
     position: fixed;
-    left: 40px;
-    bottom: 40px;
+    left: 60px;
+    bottom: 60px;
     width: 200px;
     height: 143px;
     background-image: url('../images/logo_TNT.png');
