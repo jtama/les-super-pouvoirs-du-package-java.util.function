@@ -50,6 +50,19 @@ body::after {
     transform: scale(.5);
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 283px;
+    background-image: url('../images/logo_TNT.png');
+    background-position: left bottom;
+    background-size: cover;
+    transform: scale(.5);
+}
+
 .reveal ul {
     list-style-type: none;
 }
@@ -144,15 +157,6 @@ img {
 .title > .slide-background-content {
     filter: blur(3px) brightness(200%);
     opacity: 0.3;
-}
-
-.pokemon {
-    position: absolute;
-    top: -95px;
-    right: -55px;
-    transform: rotate(18deg);
-    z-index: -1;
-    width: 435px;
 }
 
 .blur {
