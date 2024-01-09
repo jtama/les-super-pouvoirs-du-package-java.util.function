@@ -45,14 +45,12 @@
 body::after {
     content: "";
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    height: 283px;
+    left: 40px;
+    bottom: 40px;
+    width: 200px;
+    height: 143px;
     background-image: url('../images/logo_TNT.png');
-    background-position: left bottom;
-    background-size: cover;
-    transform: scale(.5);
+    background-size: 200px 143px;
 }
 
 .reveal ul {
