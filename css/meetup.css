@@ -43,18 +43,16 @@
 }
 
 body::after {
-    content: url("../images/logo_TNT.png");
+    content: "";
     position: fixed;
     left: 0;
     bottom: 0;
-    transform: scale(.5);
-}
-
-body::after {
     width: 400px;
     height: 283px;
     background-image: url('../images/logo_TNT.png');
     background-position: left bottom;
+    background-size: cover;
+    transform: scale(.5);
 }
 
 .reveal ul {
