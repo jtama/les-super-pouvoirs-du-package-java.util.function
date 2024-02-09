@@ -1,7 +1,5 @@
-[%notitle.transparency]
+[%notitle.intro]
 == Intro
-
-image::background.png[background, size=fill]
 
 image::WFTPM.png[]
 
@@ -22,17 +20,15 @@ Bon il serait peut-être temps d'apprendre à utiliser les optionals !
 Du coup peut-être que dans 10 ans, je dirais encore autre chose !
 --
 
-[%notitle.%auto-animate.columns.is-vcentered.transparency]
+[%notitle.%auto-animate.columns.is-vcentered.intro]
 === Présentation
 
-image::background.png[background, size=fill]
-
-[.column.is-one-third]
+[.column]
 --
 image::jta.png[]
 --
 
-[.column.is-3.has-text-left,data-id=presentation]
+[.column.has-text-left,data-id=presentation]
 ****
 
 [.important-text]
@@ -45,32 +41,31 @@ Architecte
 --
 
 Compagnon du devoir
+****
 
+[.column]
+--
 [.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]
 onepoint BDX
 
 [.vertical-align-middle]
+image:qualiopi.png[]
+
+[.vertical-align-middle]
 icon:github[] @jtama image:avatar.png[width=100]
-
-****
-
-[.column.pokemon]
---
-image:Jérôme_Damien.png[]
 --
 
-[%notitle.%auto-animate.columns.is-vcentered.transparency]
+
+[%notitle.%auto-animate.columns.is-vcentered.intro]
 === Présentation
-
-image::background.png[background, size=fill]
 
 [.column.is-one-third]
 --
 image::dluc.png[]
 --
 
-[.column.is-3.has-text-left,data-id=presentation]
+[.column.has-text-left, data-id=presentation]
 ****
 
 [.important-text]
@@ -82,8 +77,11 @@ Tech Lead
 Architecte
 --
 
-Buveur de bières
+Buveur de café
+****
 
+[.column]
+--
 [.vertical-align-middle]
 image:logo_onepoint.jpeg[width=50]
 onepoint BDX
@@ -91,14 +89,7 @@ onepoint BDX
 
 [.vertical-align-middle]
 icon:github[] @dlucasd
-****
-
-[.column.pokemon]
 --
-image:Jérôme_Damien.png[]
---
-
-
 
 [%notitle.columns.is-vcentered]
 === Context

@@ -37,17 +37,17 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: addnab/docker-run-action@v3
         with:
-          image: asciidoctor/docker-asciidoctor:1.58
+          image: asciidoctor/docker-asciidoctor:1.70
           options: -v ${{ github.workspace }}:/documents
           run: |
             asciidoctor-revealjs /documents/slides/index.adoc
 
       - name: Copy build to folder 📦
         run: |
-          mkdir -p build/reveal.js/dist && \
-          cp -r *.html images css build/ && \
-          cp -r reveal.js/dist/* build/reveal.js/dist/ && \
-          cp -r reveal.js/plugin build/reveal.js/
+          mkdir -p build/${{ github.ref_name }}/reveal.js/dist && \
+          cp -r *.html images css build/${{ github.ref_name }} && \
+          cp -r reveal.js/dist/* build/${{ github.ref_name }}/reveal.js/dist/ && \
+          cp -r reveal.js/plugin build/${{ github.ref_name }}/reveal.js/
         working-directory: slides
 
       - name: Deploy 🚀
@@ -55,3 +55,4 @@ jobs:
         with:
           folder: slides/build # The folder the action should deploy.
           branch: gh-pages
+          clean: false
