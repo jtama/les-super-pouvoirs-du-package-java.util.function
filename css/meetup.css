@@ -43,7 +43,7 @@
 }
 
 body::after {
-    content: url("../images/logo_devfest.png");
+    content: url("../images/logo_event.svg");
     position: fixed;
     left: 0;
     bottom: 0;
@@ -62,8 +62,12 @@ body::after {
 }
 
 
-.lesson.slide-background.present {
-    background-color: #BB8181FF;
+.intro.slide-background.present {
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("../images/background.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.50;
 }
 
 .transparency.slide-background.present {
@@ -93,7 +97,7 @@ img {
 }
 
 .reveal .progress span{
-    background-image: linear-gradient(90deg, rgba(52,109,240,1) 0%, rgba(226,43,41,1) 25%, rgba(23,143,71,1) 50%, rgba(248,176,12,1) 100%);
+    color: #1BC1E4;
 }
 
 
