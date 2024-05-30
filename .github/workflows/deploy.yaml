@@ -44,10 +44,10 @@ jobs:
 
       - name: Copy build to folder 📦
         run: |
-          mkdir -p build/reveal.js/dist && \
-          cp -r *.html images css build/ && \
-          cp -r reveal.js/dist/* build/reveal.js/dist/ && \
-          cp -r reveal.js/plugin build/reveal.js/
+          mkdir -p build/${{ github.ref_name }}/reveal.js/dist && \
+          cp -r *.html images css build/${{ github.ref_name }} && \
+          cp -r reveal.js/dist/* build/${{ github.ref_name }}/reveal.js/dist/ && \
+          cp -r reveal.js/plugin build/${{ github.ref_name }}/reveal.js/
         working-directory: slides
 
       - name: Deploy 🚀
@@ -55,3 +55,4 @@ jobs:
         with:
           folder: slides/build # The folder the action should deploy.
           branch: gh-pages
+          clean: false
