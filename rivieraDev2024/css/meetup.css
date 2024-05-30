@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand");
+
+/* latin-ext */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Titillium Bold';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzY5abuWIGxA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Titillium Bold';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGItzY5abuWI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    --r-background-color: #e7e7e7;
+    --r-main-color: #012d3f;
+    --r-main-font: 'Titillium Web';
+}
+
+body::after {
+    content: url("../images/logo_event.svg");
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: scale(.5);
+}
+
+.reveal ul {
+    list-style-type: none;
+}
+
+.light h2 {
+    color: var(--r-background-color);
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+    font-size: var(--r-heading2-size);
+}
+
+
+.intro.slide-background.present {
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("../images/background.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.50;
+}
+
+.transparency.slide-background.present {
+    opacity: 0.20;
+}
+
+.big {
+    font-size: 60px;
+    color: #012d3f;
+}
+
+.use-case {
+    font-family: "Gochi Hand", serif;
+}
+
+.red {
+    color: #111012;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.reveal .progress {
+    height: 10px;
+}
+
+.reveal .progress span{
+    color: #1BC1E4;
+}
+
+
+.slide-background.conclusion {
+    background-image: linear-gradient(135deg, rgba(132,171,194,1) 0%, rgba(37,73,26,1) 100%);
+}
+
+.vertical-align-middle > p {
+    vertical-align: middle;
+}
+
+.vertical-align-middle > p > span {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.vertical-align-middle > p > span > img {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.important-text > *  {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #012d3f;
+}
+
+.red {
+    color: #b62c2c;
+}
+
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: 38px;
+}
+
+.column.has-text-right > div > div.hdlist.small > table {
+    margin-right: 0;
+}
+
+.column.has-text-left > div > div.hdlist.small > table {
+    margin-left: 0;
+}
+
+.title > .slide-background-content {
+    filter: blur(3px) brightness(200%);
+    opacity: 0.3;
+}
+
+.pokemon {
+    position: absolute;
+    top: -95px;
+    right: -55px;
+    transform: rotate(18deg);
+    z-index: -1;
+    width: 435px;
+}
+
+.blur {
+    filter: blur(4px);
+}
