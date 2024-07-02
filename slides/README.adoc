@@ -6,6 +6,7 @@ Readable version available on https://jtama.github.io/les-super-pouvoirs-du-pack
 
 [source,bash]
 ----
+jbang qrcode@xam.dk -i logo_openfeedback.png --qr-color FF6A47 https://openfeedback.io/rivieradev24/0/212
 git clone git@github.com:cfrezier/reveal-progress-image-plugin.git reveal.js/plugin/progress-image
 docker container run --rm -v $(pwd):/documents asciidoctor/docker-asciidoctor:1.58 'asciidoctor-revealjs /documents/slides/index.adoc'
 ----
